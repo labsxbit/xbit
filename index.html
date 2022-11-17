@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<title>XBit Labs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">What we offer</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">Who can take the course ?</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>XBit Labs</b> - Learn Programming using the simple approach </h1>
+    <p>Programming can be easily learnt with practice like Mathematics !</p>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="images/xbit-labs.png" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Python</span>
+      </div>
+    </div>
+	<div class="w3-display-container mySlides">
+      <img src="images/python.png" style="width:100%">
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">Python</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/apache.png" style="width:100%">
+      <div class="w3-display-middle w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">HTTP Server</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/mysql.png" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">My SQL</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container" id="plans">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>Python Programming course - 2 months </h3>
+      <p>This course will ensure student is able create basic programs with good programming knowledge and can use their knoledge to learn advance courses in web development using frameworks like Django for web development or even Machine learning  </p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>Java Programming Course - 2 months</h3>
+      <p>Student can take this course if they have a subject they want to learn or if they want to get into Application development domain like Android that requires OOPs concepts and programming in Java or Kotlin. They can enhance their once they have good grasp of Java Programming. </p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>C Programming - 3 months</h3>
+      <p>Anyone who has some interest to learn the programming from very basic level. C Programming is good to start and later they can improve their knowledge by learning advance concepts in C, C++</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Web Development and Design - 2 months</h3>
+      <p>This course will primarly focus on frontend technologies like HTML, CSS and JavaScript. Once student have good knowledge of this they can move to Backend development to advance their skills and create complex projects. </p>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  
+  <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+      <h3>Course Structure</h3>
+      <p>Choose the course as per your be</p>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">  
+        <li class="w3-black w3-xlarge w3-padding-32">Basic ( Level 1) </li>
+        <li class="w3-padding-16"><b>Basics</b> of Programming </li>
+        <li class="w3-padding-16"><b>Understanding </b> Loops for, while</li>
+        <li class="w3-padding-16"><b>100</b> Practice Programs</li>
+        <li class="w3-padding-16"><b>Endless</b> Support for doubts</li>
+        <li class="w3-padding-16"><b>Certification </b> provided after successful completion </li>
+
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">2500/-  </h2>
+          <span class="w3-opacity">for the course</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href = 'https://forms.gle/4LcVa51pk7nVkRTf8'">Course Enrolment</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Intermediate ( Level 2 )</li>
+        <li class="w3-padding-16"><b>Programming</b> Basics + Level 1</li>
+        <li class="w3-padding-16"><b>100</b> Practice Programs </li>
+        <li class="w3-padding-16"><b>Methods, Classes </b> OOP concepts</li>
+        <li class="w3-padding-16"><b>Endless</b> Support for doubt</li>
+        <li class="w3-padding-16"><b>Certification </b> provided after successful completion </li>
+
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">3500 /- </h2>
+          <span class="w3-opacity">for the course</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href = 'https://forms.gle/4LcVa51pk7nVkRTf8'">Course Enrolment</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Advanced </li>
+        <li class="w3-padding-16"><b>Level 1 and Level 2</b> Courses</li>
+        <li class="w3-padding-16"><b>10+ Real World </b>Projects </li>
+        <li class="w3-padding-16"><b>Exposure to </b> industry standard tools like git, svn etc</li>
+        <li class="w3-padding-16"><b>Endless </b>Support for doubt </li>
+        <li class="w3-padding-16"><b>Certification </b> provided after successful completion </li>
+
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">5500/-</h2>
+          <span class="w3-opacity">for the course</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large" onclick="window.location.href = 'https://forms.gle/4LcVa51pk7nVkRTf8'">Course Enrolment</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who can take the course</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="/w3images/team1.jpg" alt="" style="width:100%">
+        <div class="w3-container">
+          <h3>Students</h3>
+          <p class="w3-opacity">Class 8 to 12</p>
+          <p>The basic course (Level 1) is designed for students studying till class 8. And an intermediate course(Level 2) for students of class 9 and above. </p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href = 'https://forms.gle/4LcVa51pk7nVkRTf8'">Register</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="/w3images/team2.jpg" alt="" style="width:100%">
+        <div class="w3-container">
+          <h3>Undergraduates</h3>
+          <p class="w3-opacity">Bsc, BTech or any other undergraduate stream</p>
+          <p> The Intermediate and Advance Programming courses will enable the students to get placed in good companies and will enable to clear various competitive exams. </p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href = 'https://forms.gle/4LcVa51pk7nVkRTf8'">Register</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="/w3images/team3.jpg" alt="" style="width:100%">
+        <div class="w3-container">
+          <h3>Post graduate or above</h3>
+          <p class="w3-opacity">Anyone willing to learn</p>
+          <p>Anyone who has interest in Programming can restart their career by learning how to program and that will help them land some job or a good learning experience.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href = 'https://forms.gle/4LcVa51pk7nVkRTf8'">Register</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact </span>
+    
+    <div class="w3-mobile">
+      
+      <table>
+        <tr>
+          <th>Contact </th>
+          <th> Details </th>
+        </tr>
+        <tr>
+          <td>
+            <h2>Email</h2>
+          </td>
+          <td>
+            <button style="font-size:24px">labsxbit@gmail.com <i class="fa fa-envelope" window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=labsxbit@gmail.com'></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2> Phone </h2>
+          </td>
+          <td>
+            <button style="font-size:24px">919625188625 <i class="fa fa-whatsapp" window.location.href = 'https://api.whatsapp.com/send?phone=919625188625'></i></button>
+          </td>
+        </tr>
+      </table>
+        
+      
+      
+      
+
+    </div>
+  <!--
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form>
+-->
+</div>  
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <h4>Also reach us at</h4>
+  <div class="w3-xlarge w3-section">
+    <a href ="https://twitter.com/xbit_labs"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>&copy;<a href="" title="" target="_blank" class="w3-hover-text-green">XBit Labs </a></p>
+</footer>
+
+
+<script>
+
+  
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-black";
+}
+
+</script>
+
+</body>
+</html>
