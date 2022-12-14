@@ -6,29 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
-.mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+<link rel="stylesheet" href="css/styles.css">
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-</style>
 <body>
 
 <!-- Links (sit on top) -->
@@ -47,7 +26,36 @@ tr:nth-child(even) {
       <a href="#contact" class="w3-button w3-block">Contact</a>
     </div>
   </div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <!--<a href="#news">News</a>-->
+  <div class="dropdown">
+	  <button class="dropbtn" onclick="myFunction()">Learn to Code
+	  	  <i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content" id="myDropdown">
+		  <a href="pages/python.html">Python3</a>
+		  <a href="#">Java</a>
+		  <a href="#">C</a>
+	  </div>
+  </div>
+ 
+	<div class="dropdown">
+		<button class="dropbtn" onclick="myFunction2()">E Books
+			<i class="fa fa-caret-down"></i>
+		 </button>
+		 <div class="dropdown-content" id="myDropdown2">
+			<a href="#">Linux Shell </a>
+			<a href="https://docs.google.com/document/d/e/2PACX-1vQgYoqIjoWjLFW9VR956ON-fIqqYVcGVdX6U92M_wQIkAndNQDaiX9PdBt3wvXHHoHuk_MOJHZWDyt0/pub">Python Programming</a>
+			<a href="https://docs.google.com/document/d/e/2PACX-1vQpufHnIX3ah01StfhJncDcUBSeKEBbgD0Y3I7TlRg40ORuXM3ZZFxcBaWmclfDJrmeG4VbVhbM7AjA/pub"> Java Programming</a>
+			<a href="#"></a>
+		  </div>
+	</div>
+
 </div>
+</div>
+
 
 <!-- Content -->
 <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
@@ -302,38 +310,7 @@ tr:nth-child(even) {
 </footer>
 
 
-<script>
-
-  
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-black";
-}
-
-</script>
+<script src="scripts/myscripts.js"></script> 
 
 </body>
 </html>
