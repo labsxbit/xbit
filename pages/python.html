@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+
+
+
 <head>
 <title>Programming Blog</title>
 <meta charset="UTF-8">
@@ -19,6 +23,31 @@
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
 
 </head>
+
+
+
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+<div class="w3-row w3-large w3-dark-grey">
+    <div class="w3-col s3">
+      <a href="https://labsxbit.github.io/xbit/" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block"></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block"></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block"></a>
+    </div>
+</div>
+</div>
+
+
+
+
 <body class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
@@ -29,14 +58,267 @@ and is wrapped around the whole page content, except for the footer in this exam
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b>Python Programming</b></h1>
   <p>Learn to code in  <span class="w3-tag">Python3</span></p>
+
 </header>
+
+
 
 <!-- Grid -->
 <div class="w3-row">
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
-  <!-- Blog entry -->
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/xbit-labs.png" alt="" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Python Programming</b></h3>
+      <h5>Intermediate Level <span class="w3-opacity"></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>
+		<pre><code class="python">
+			Chapter 1 <a href='#1_functions'> Creating Functions </a>
+			Chapter 2 <a href='#2_lists'> Using Lists and Functions</a>
+			Chapter 3 <a href='#2_lists'> Classes and Objects </a>
+			Chapter  <a href='#2_lists'>  </a>
+		</code></pre>
+	 </p>
+    </div>
+  </div>
+<a href="#" class="w3-button w3-black w3-margin "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+<!-- Blog entry 
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/xbit-labs.png" alt="python" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Topic</b></h3>
+      <h5>Sub topic, <span class="w3-opacity">Dec 18, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="python">
+Type the code here 
+		</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/xbit-labs.png" alt="python" style="width:100%">
+    <div class="w3-container" id='3_classes'>
+      <h3><b>Classes and Objects in Python </b></h3>
+      <h5>Initializing the class using object and calling its functions <span class="w3-opacity">Dec 18, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="python">
+# Creating classes in python
+class Person:
+	'''
+	__init__ function is always caslled first when the class is initiated
+	It assigns the values to the object 
+
+	'''
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
+	
+	'''
+	When __str__ method is not created and __init__ is called then the values of the person will not be printed, so in order to print the details __str__ method should be used in the class
+	'''
+	
+	def __str__(self):
+		return f'Person name is : {self.name} and age is {self.age}'
+
+	# Instead of self we can have any name to call the varaible for storing values but it should be the first argument
+	def hobies(self):
+		if self.name == 'Shweta':
+			print('playing cricket')
+		elif self.name == 'Arun':
+			print('Hobby is music') 
+		else:
+			print('No Hobby')
+
+def main():
+	
+	# Program 1) Now we have to create an object for class Person
+	'''	
+	pers1 = Person('Shweta', 23) # So 
+	print(pers1)
+
+	pers1.hobies()
+	'''
+	# Program 2) 
+	pers2 = Person('Arun', 26)
+	print(pers2)
+	pers2.hobies()
+
+
+if __name__ == '__main__':
+	main()
+		</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+		
+    </div>
+	
+  </div>
+<a href="#" class="w3-button w3-black w3-margin "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/xbit-labs.png" alt="python" style="width:100%">
+    <div class="w3-container" id='2_lists'>
+      <h3><b>Using Lists and Functions in Python</b></h3>
+      <h5>Fetch the details of the student using lists <span class="w3-opacity">Dec 18, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="python">
+
+def student_details(name, std, roll_no):
+	print('Student ', name,  ' with roll number ', roll_no, ' studies in class ', std)
+
+def main():
+
+	# Program 2) We can have a list of many studentend details and we can fetch their name, std and roll no and later pass it to the function as given in program 1
+	name_list = ['Arun', 'Nikhil', 'Shweta', 'Hema']
+	std_ls = ['msc', 'finance', 'b come', 'cse']
+	
+	# Let roll_no be the number values of the generated from the range function
+	number = len(name_list)
+	print('The total number of students to fetch details are :', number)
+	for i in range(number):
+		student_details(name_list[i], std_ls[i], i)
+	
+	# Program 1) We want to enter the details of the student manually and print on the output screen
+	'''	
+	student_details('sagar', 'msc', '1000017783')
+	'''
+if __name__ == '__main__':
+	main()
+
+
+		</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+			
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+			
+        </div>
+		
+      </div>
+   </div>
+  </div>
+<a href="#" class="w3-button w3-black w3-margin "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+
+
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/xbit-labs.png" alt="python" style="width:100%">
+    <div class="w3-container" id='1_functions'>
+      <h3><b>Understanding Functions in Python</b></h3>
+      <h5>Using functions - Check if a number is even or odd, <span class="w3-opacity">Dec 18, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="python">
+# Program to check if a number input by the user is even or odd
+
+def even_odd1(y):
+	if y%2==0:
+		return 1
+	elif y%2!=0:
+		return 0
+
+def even_odd2(y):
+	if y%2==0:
+		return 1
+	return 0
+
+def even_odd3(y):
+	if y%2==0:
+		return 1
+	else:
+		return 0
+
+
+def main():
+	
+	# Program 2) This program will check if all numbers in a range are even or odd
+
+	print('Enter the min range : ')
+
+	x = int(input())
+	
+	print('Enter the max range : ')
+	
+	y = int(input())
+
+	for number in range(x, y):
+		x2 = even_odd2(number)
+		if x2==1:
+			print('Number ', number, ' is even')
+		else:
+			print('Number ', number, ' is odd')
+
+	# Program 1) This Program will check if one number scanned by the user is even or odd	
+	'''
+	print('Enter a number : ')
+	x = int(input())
+	x2 = even_odd1(x)
+	
+	if x2==1:
+		print(x, ' is Even')
+	else:
+		print(x, ' is Odd')
+
+	'''
+
+if __name__ == '__main__':
+	main()
+		</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<a href="#" class="w3-button w3-black w3-margin "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+  <!-- Blog entry
   <div class="w3-card-4 w3-margin w3-white">
     <img src="images/xbit-labs.png" alt="code" style="width:100%">
     <div class="w3-container">
@@ -78,7 +360,7 @@ Expected Output
   </div>
   <hr>
 
-  <!-- Blog entry -->
+  <!-- Blog entry
   <div class="w3-card-4 w3-margin w3-white">
   <img src="/w3images/bridge.jpg" alt="code" style="width:100%">
     <div class="w3-container">
@@ -131,13 +413,14 @@ Expected Output
 </div>
 
 <!-- Introduction menu -->
+
 <div class="w3-col l4">
   <!-- About Card -->
   <div class="w3-card w3-margin w3-margin-top">
-  <img src="images/xbit-labs.png" style="width:100%">
+  <img src="images/logo_xbit.png" style="width:100%">
     <div class="w3-container w3-white">
       <h4><b>XBit Labs</b></h4>
-      <p>We provide training in Computer programming for students (6-12) and working professionals willing to start heir career in software industry</p>
+      <p>Software Engineering Institute</p>
     </div>
   </div><hr>
   
@@ -149,23 +432,23 @@ Expected Output
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
         <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Lorem</span><br>
-        <span>Sed mattis nunc</span>
+        <span class="w3-large">Classes in python</span><br>
+        <span>Link </span>
       </li>
       <li class="w3-padding-16">
         <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
+        <span class="w3-large"></span><br>
+        <span></span>
       </li> 
       <li class="w3-padding-16">
         <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <span>Ultricies congue</span>
+        <span class="w3-large"></span><br>
+        <span> </span>
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
         <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
+        <span class="w3-large"></span><br>
+        <span>  </span>
       </li>  
     </ul>
   </div>
@@ -177,11 +460,11 @@ Expected Output
       <h4>Tags</h4>
     </div>
     <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    <p><span class="w3-tag w3-black w3-margin-bottom">Python3</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"> Classes</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Objects</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Functions</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">pass</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">while</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">for</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">if-else</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">main</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">lambda</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">lists</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">tuples</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Dictionary</span>
     </p>
     </div>
   </div>
@@ -195,13 +478,30 @@ Expected Output
 <!-- END w3-content -->
 </div>
 
+
+
+
+</body>
+
+
+
+
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
   <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+ 
+  <p>Powered by <a href="https://labsxbit.github.io/xbit" target="_blank">XBit Labs</a></p>
 </footer>
 
-</body>
+
+
+
+
+
+
+
+
+
 </html>
 
