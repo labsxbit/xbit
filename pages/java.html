@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+<title>Programming Java</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+ <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+
+</head>
+
+
+
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+<div class="w3-row w3-large w3-dark-grey">
+    <div class="w3-col s3">
+      <a href="https://labsxbit.github.io/xbit/" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block"></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block"></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block"></a>
+    </div>
+</div>
+</div>
+
+
+
+
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Java Programming</b></h1>
+  <p>Learn to code in  <span class="w3-tag">Java</span></p>
+
+</header>
+
+
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="" alt="" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Java Programming</b></h3>
+      <h5> <span class="w3-opacity"></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>
+		<pre><code class="python">
+			JAVA Basics : 
+			Chapter 1 <a href='#1_program'> Basic Java Program - find even or odd number</a>
+			Chapter 2 <a href='#2_program'> Using Methods</a>
+			Chapter 3 <a href='#3_program'> Classes </a>
+			Chapter  <a href='#2_lists'>  </a>
+		</code></pre>
+	 </p>
+    </div>
+  </div>
+<a href="#" class="w3-button w3-black w3-margin "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+<!-- Blog entry 
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/xbit-labs.png" alt="python" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Topic</b></h3>
+      <h5>Sub topic, <span class="w3-opacity">Dec 18, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="python">
+Type the code here 
+		</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="" alt="" style="width:100%">
+    <div class="w3-container" id='3_program'>
+      <h3><b>Creating a basic class in java</b></h3>
+      <h5>Initializing the class using object and calling its methods <span class="w3-opacity">Dec 19, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="java">
+class Student{  
+ int rollno;  
+ String name;  
+ void insertRecord(int r, String n){  
+  rollno=r;  
+  name=n;  
+ }  
+ void displayInformation(){System.out.println(rollno+" "+name);}  
+}  
+
+public class Main
+{
+    public static void main(String args[]){  
+      Student s1=new Student();  
+      Student s2=new Student();  
+      s1.insertRecord(111,"Arun");  
+      s2.insertRecord(222,"Amit");  
+      s1.displayInformation();  
+      s2.displayInformation();  
+    }
+}
+		</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag"></span></span></p>
+        </div>
+      </div>
+		
+    </div>
+	
+  </div>
+<a href="#" class="w3-button w3-black w3-margin "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="" alt="" style="width:100%">
+    <div class="w3-container" id='2_program'>
+      <h3><b>Using Methods </b></h3>
+      <h5>Using methods to find even or odd number <span class="w3-opacity">Dec 19, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="java">
+import java.util.Scanner;
+
+public class Main{
+    public static int even_odd(int num){
+		if(num%2==0){
+			System.out.println("Even number\n");
+			return 1;
+		}
+		else{
+			System.out.println("Odd number\n");		
+			return 0;
+		}
+	}
+	
+	public static void main(String[] args){
+		int num;
+		// here we create an object called scan which is created from Scanner class 
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a number: ");
+		// the same object we created is now used to call nextInt() method which assumes the user is entering an integer input value. 
+		num = scan.nextInt();
+		// here we use an if condition to check if the remainder when divided by 2 gives 0 then the number will be even otherwise odd. 
+		
+		even_odd(num);
+	}
+}
+
+// Expected output
+Enter a number: 
+123
+Odd number
+
+	  	</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+			
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag"></span></span></p>
+			
+        </div>
+		
+      </div>
+   </div>
+  </div>
+<a href="#" class="w3-button w3-black w3-margin "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+
+
+
+<!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="" alt="" style="width:100%">
+    <div class="w3-container" id='1_program'>
+      <h3><b>Basic Java Program - find even or odd number</b></h3>
+      <h5> Check if a number is even or odd <span class="w3-opacity">Dec 19, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="java">
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+int num;
+		// here we create an object called scan which is created from Scanner class 
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a number: ");
+		// the same object we created is now used to call nextInt() method which assumes the user is entering an integer input value. 
+		num = scan.nextInt();
+		// here we use an if condition to check if the remainder when divided by 2 gives 0 then the number will be even otherwise odd. 
+		if(num%2==0){
+			System.out.println("Even number\n");
+		}
+		else{
+			System.out.println("Odd number\n");		
+		}    }
+}
+
+		</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag"></span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<a href="#" class="w3-button w3-black w3-margin "><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+  <!-- Blog entry
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/xbit-labs.png" alt="code" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Understanding Arrays</b></h3>
+      <h5>Arrays Problem - reversing an array, <span class="w3-opacity">Nov 17, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="python">
+#!/bin/python3
+import math
+import os
+import random
+import re
+import sys
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().rstrip().split()))
+    print(' '.join(map(str, reversed(arr))))
+
+Input (stdin)
+4
+1 4 3 2
+Your Output (stdout) 
+2 3 4 1
+Expected Output 
+2 3 4 1
+		</code></pre></p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/bridge.jpg" alt="code" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Finding Averages</b></h3>
+      <h5>Finding Averages using functions <span class="w3-opacity">Nov 17, 2022</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p><pre><code class="python">
+#!/bin/python3
+import math
+import os
+import random
+import re
+import sys
+
+def avg(*nums):
+    count = len(nums)
+    sum = 0
+    for num in nums:
+        sum = sum + num
+    return sum/count
+           
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    nums = list(map(int, input().split()))
+    res = avg(*nums)
+    fptr.write('%.2f' % res + '\n')
+    fptr.close()
+
+Input (stdin)
+2 5
+Your Output (stdout) 
+3.50
+Expected Output 
+3.50
+	</code></pre>
+	</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>XBit Labs</b></h4>
+      <p>Software Engineering Institute</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Using Methods</span><br>
+        <span> <a href='#2_program'> Using methods to find even or odd number</a> </span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large"></span><br>
+        <span></span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large"></span><br>
+        <span> </span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="" alt="" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large"></span><br>
+        <span>  </span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">java</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"> Class</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">boolean</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">byte</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">abstract</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">const</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">exports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">extends</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">finally</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">instanceof</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">super</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">throws</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">this</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">static</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+
+
+</body>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+ 
+  <p>Powered by <a href="https://labsxbit.github.io/xbit" target="_blank">XBit Labs</a></p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+</html>
+
